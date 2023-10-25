@@ -6,7 +6,7 @@ import requests
 import time, datetime
 
 headers = {
-    'standardUA': '{"channelName": "dmkj_Android", "countryCode": "CN", "createTime": 1604663529774, "device": "HUAWEI vmos","hardware": "vphw71", "modifyTime": 1604663529774, "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8","screenResolution": "1080-2115", "startTime": 1605884705024, "sysVersion": "Android 25 7.1.2","system": "android", "uuid": "12:34:56:31:97:80", "version": "4.3.6"}',
+    'standardUA': '{"channelName": "dmkj_Android", "countryCode": "CN", "createTime": 1604663529774, "device": "HUAWEI vmos","hardware": "vphw71", "modifyTime": 1604663529774, "operator": "%E4%B8%AD%E5%9B%BD%E7%A7%BB%E5%8A%A8","screenResolution": "1080-2115", "startTime": 1605884705024, "sysVersion": "Android 25 7.1.2","system": "android", "uuid": "12:34:56:31:97:80", "version": "4.6.0"}',
     'Content-Type': 'application/x-www-form-urlencoded',
     'Content-Length': '309',
     'Host': 'appdmkj.5idream.net',
@@ -30,7 +30,7 @@ def Apply(account, pwd):
     data = {
         'pwd': pwd_,
         'account': account,
-        'version': '4.3.6'
+        'version': '4.6.0'
     }
 
     response = requests.post(url=url, headers=headers, data=data).json()
@@ -56,7 +56,7 @@ def get_time(accounts_data, id):
         'uid': uid,  # 登陆接口获取
         'token': token,  # 登陆接口获取
         'activityId': int(id),  # 活动ID
-        'version': '4.3.6',
+        'version': '4.6.0',
     }
 
     set_data = requests.post(url=url, headers=headers, data=data_get_time).json()
@@ -90,7 +90,7 @@ def get_activit(accounts_data):
         'specialFlag': '',
         'status': '',
         'keyword': '',
-        'version': '4.3.6',
+        'version': '4.6.0',
         'uid': uid,  # 登陆接口获取
         'sort': '',
         'page': '1',
@@ -126,7 +126,7 @@ def main(passwd, id):
             'remark': '',
             'data': str(info),  # 活动报名参数
             'activityId': id,  # 活动ID
-            'version': '4.3.6',
+            'version': '4.6.0',
         }
         response1 = requests.post(url='https://appdmkj.5idream.net/v2/signup/submit', data=data1,
                                   headers=headers).json()
