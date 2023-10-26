@@ -6,8 +6,9 @@ fuck“盗”梦空间
 3. 由于“盗”梦空间频繁更新，维护可能滞后
 4. 有问题和想法的可以在Issues里提出
 ### 使用方法
-1. 在具有Python环境下运行main.py
-2. 在具有Python插件的Visual Studio Code或者jupyter上运行main.py
+1. 在Release中下载最新版本的main.py
+2. 在具有Python环境下运行main.py
+3. 在具有Python插件的Visual Studio Code或者jupyter上运行main.py
 ### 在线Python环境 “盗”梦空间脚本 by KismetPro
 1. 由于多人使用在线脚本，导致被 ban IP，无法抢课，以下脚本作为测试使用，请务必在本地运行
 2. 使用Replit可以在任何地方执行Python脚本
